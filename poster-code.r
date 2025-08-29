@@ -1,5 +1,3 @@
-setwd("~/4th Year Uni/ADA/Poster Assignment")
-bedford <- read.csv("CENTRAL BEDFORDSHIRE.csv")
 View(bedford)
 
 library(tidyverse)
@@ -187,5 +185,6 @@ ggplot(bedfordpreds_full %>% select(towncity, towncity.lower, towncity.fit, town
        aes(x=towncity, y=towncity.fit, ymin=towncity.lower, ymax=towncity.upper, label=round(towncity.fit,2))) +
   geom_errorbar() + geom_label() +
   labs(x="Town/City", y="Effect on house prices")
+
 
 
