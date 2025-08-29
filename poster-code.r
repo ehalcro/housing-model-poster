@@ -188,3 +188,4 @@ ggplot(bedfordpreds_full %>% select(towncity, towncity.lower, towncity.fit, town
   geom_errorbar() + geom_label() +
   labs(x="Town/City", y="Effect on house prices")
 
+
